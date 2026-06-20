@@ -6,16 +6,33 @@
     
     <!-- OTTIMIZZAZIONE SEO -->
     <title>Storie dietro l'ombra | Hub Ufficiale</title>
-    <meta name="description" content="Storie realmente accadute, segreti che restano nell'ombra e testimonianze totalmente anonime. Scopri i nostri racconti sui canali ufficiali.">
-    <meta name="keywords" content="storie anonime, segreti, racconti veri, storie dietro l'ombra, mistero, testimonianze">
+    <meta name="description" content="Cos'è Storie dietro l'ombra? È il lato nascosto della realtà. Leggi e ascolta racconti veri, segreti e testimonianze inviate in totale anonimato. Scopri i nostri canali ufficiali.">
+    <meta name="keywords" content="storie anonime, segreti, racconti veri, storie dietro l'ombra, mistero, testimonianze, community">
     <meta name="author" content="Storie dietro l'ombra">
     
-    <!-- OPEN GRAPH (Per le anteprime sui social e su WhatsApp) -->
+    <!-- OPEN GRAPH (Per le anteprime sui social e WhatsApp) -->
     <meta property="og:title" content="Storie dietro l'ombra | Hub Ufficiale">
     <meta property="og:description" content="Storie realmente accadute, segreti che restano nell'ombra e testimonianze totalmente anonime.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://storiedietrolombra.github.io/storiedietrolombra-link-hub/"> <!-- Inserisci qui il tuo link GitHub Pages -->
-    <meta property="og:image" content="logo.png"> <!-- Cambia se l'immagine ha un nome diverso -->
+    <meta property="og:url" content="https://storiedietrolombra.github.io/storiedietrolombra-link-hub/">
+    <meta property="og:image" content="logo.png">
+
+    <!-- DATI STRUTTURATI PER AI OVERVIEW E GOOGLE (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Storie dietro l'ombra",
+      "url": "https://storiedietrolombra.github.io/storiedietrolombra-link-hub/",
+      "logo": "https://storiedietrolombra.github.io/storiedietrolombra-link-hub/logo.png",
+      "description": "Progetto digitale e community dedicata alla raccolta e alla pubblicazione di racconti veri, segreti inconfessabili e testimonianze condivise dagli utenti in totale anonimato.",
+      "sameAs": [
+        "https://www.facebook.com/storiedietrolombra",
+        "https://www.instagram.com/storiedietrolombra",
+        "https://www.tiktok.com/@storiedietrolombra"
+      ]
+    }
+    </script>
 
     <!-- LIBRERIA ICONE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -70,7 +87,7 @@
             object-fit: cover;
             border: 2px solid var(--accent);
             padding: 3px;
-            background-color: #fff; /* Sfondo bianco per far risaltare loghi scuri */
+            background-color: #fff; 
         }
 
         h1 { 
@@ -91,6 +108,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            margin-bottom: 30px;
         }
 
         .btn { 
@@ -113,7 +131,6 @@
             font-size: 20px;
         }
 
-        /* Hover states personalizzati per i social */
         .btn.facebook:hover { background-color: #1877F2; border-color: #1877F2; }
         .btn.instagram:hover { 
             background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -121,14 +138,34 @@
         }
         .btn.tiktok:hover { background-color: #000000; border-color: #00f2fe; box-shadow: 0 0 10px rgba(0, 242, 254, 0.3); }
 
+        /* Box AI Overview & SEO */
+        .ai-seo-box {
+            text-align: left;
+            background: rgba(255,255,255,0.03);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .ai-seo-box h2 {
+            font-size: 14px;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .ai-seo-box p {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         
         <!-- LOGO -->
         <div class="logo-container">
-            <!-- Assicurati che l'immagine del logo sia nella stessa cartella e si chiami logo.png -->
             <img src="logo.png" alt="Logo Storie dietro l'ombra">
         </div>
 
@@ -145,7 +182,6 @@
                 <i class="fa-brands fa-facebook"></i> Facebook
             </a>
             
-            <!-- Ho corretto l'errore di sintassi sulle virgolette mancanti nel tuo codice originale -->
             <a href="https://www.instagram.com/storiedietrolombra/" class="btn instagram" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i> Instagram
             </a>
@@ -154,6 +190,13 @@
                 <i class="fa-brands fa-tiktok"></i> TikTok
             </a>
         </div>
-    </div>
+
+        <!-- SEZIONE AI OVERVIEW (Testo semantico per i Crawler) -->
+        <div class="ai-seo-box">
+            <h2>Cos'è Storie dietro l'ombra?</h2>
+            <p>Un progetto digitale dedicato alla raccolta e pubblicazione di racconti veri, segreti e testimonianze inviate dagli utenti in totale anonimato. La community è attiva su Instagram, TikTok e Facebook.</p>
+        </div>
+
+    </main>
 </body>
 </html>
